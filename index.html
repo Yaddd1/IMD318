@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    .slideshow {
+      position: relative;
+      width: 300px;
+      height: 380px;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .slideshow img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slideshow img.active {
+      opacity: 1;
+    }
+
+    .nav-container a.active {
+      color: #ff0066;
+      border-bottom: 2px solid #ff0066;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Personal Website</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="text">
+        <h5>WELCOME TO MY WORLD</h5>
+        <h1>Hi, I'm <span class="highlight">Muhammad Ziyad</span><br>a <span class="highlight">Student & Developer</span>.</h1>
+        <p>Currently pursuing a Diploma in Information Management.</p>
+        <div class="socials">
+          <p>Find me on:</p>
+          <a href="https://www.facebook.com/MuhdZiyadZuha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mdzyadd" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@_mdziyaddzx" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="photo">
+        <div class="slideshow">
+          <img src="image/profile.jpeg.jpg" class="active" alt="Muhammad Ziyad 1">
+          <img src="image/profile2.jpeg" alt="Muhammad Ziyad 2">
+          <img src="image/profile3.jpeg" alt="Muhammad Ziyad 3">
+          <img src="image/profile4.jpeg" alt="Muhammad Ziyad 4">
+          <img src="image/profile5.jpeg" alt="Muhammad Ziyad 5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const images = document.querySelectorAll(".slideshow img");
+    let current = 0;
+
+    setInterval(() => {
+      images[current].classList.remove("active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("active");
+    }, 3000); 
+  </script>
+
+  <footer style="background:#111; color:#ccc; text-align:center; padding:20px; font-size:0.9em;">
+  &copy; 2025 Muhammad Ziyad. All rights reserved.
+</footer>
+
+</body>
+</html>

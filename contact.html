@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Muhammad Ziyad</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+      margin: 0;
+    }
+
+    .navbar {
+      background: #111;
+      padding: 20px 0;
+    }
+
+    .nav-container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-container ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-container a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .logo {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+
+    .hero {
+      padding: 80px 0;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .text {
+      flex: 1;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #ff0066;
+    }
+
+    h5 {
+      font-size: 1em;
+      letter-spacing: 2px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      max-width: 500px;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .btn {
+      background-color: #ff0066;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e6005c;
+    }
+
+    .social-icons {
+      margin-top: 40px;
+    }
+
+    .social-icons h2 {
+      color: #ff0066;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.8em;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ff0066;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-container ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 10px;
+      }
+
+      .text {
+        padding: 0 15px;
+      }
+
+      form input, form textarea {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Personal Website</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="text">
+        <h5>Let's Connect</h5>
+        <h1>Contact Me</h1>
+        <p>Have a project in mind or just want to say hello? Feel free to reach out through the form below or my email.</p>
+
+        <p>Email: <a href="mailto:ziyadzuha04@gmail.com" style="color:#ff0066;">ziyadzuha04@gmail.com</a></p>
+        <p>Phone: +60 11-39135913</p>
+
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required><br>
+          <input type="email" name="email" placeholder="Your Email" required><br>
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+      <div style="margin-top: 20px;">
+        <a href="https://maps.app.goo.gl/zMBNtngVoQjadzvx5" class="btn" target="_blank">
+        <i class="fas fa-map-marker-alt"></i> View on Google Maps
+        </a>
+    </div>
+        
+      <div style="margin-top: 40px;">
+       <h2 style="color:#ff0066; margin-bottom: 10px;">My Location</h2>
+       <iframe 
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.6947729231606!2d102.2734988!3d5.7569976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1751524578089!5m2!1sen!2smy" 
+       width="100%" 
+       height="350" 
+       style="border:0; border-radius:12px; box-shadow: 0 4px 15px rgba(0,0,0,0.4);" 
+       allowfullscreen="" 
+       loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade">
+       </iframe>
+    </div>
+
+
+        <div class="social-icons">
+          <h2>Follow Me</h2>
+          <a href="https://instagram.com/mdzyadd" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/MuhdZiyadZuha" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://tiktok.com/@_mdziyaddzx" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/601139135913" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#111; color:#ccc; text-align:center; padding:20px; font-size:0.9em;">
+  &copy; 2025 Muhammad Ziyad. All rights reserved.
+</footer>
+
+</body>
+</html>
